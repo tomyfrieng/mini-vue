@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>self-vue</title>
+</head>
+<style>
+    #app {
+        text-align: center;
+    }
+</style>
+<body>
+    <div id="app">
+        <h2>{{person.name}}</h2>
+        <div class="nameclass">{{msg}}</div>
+        <div v-text="msg"></div>
+        <div v-text='person.name'></div>
+        <div v-html="htmlStr"></div>
+        <div v-html="msg"></div>
+        <ul>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+        </ul>
+        <input type="text" v-model="msg"/>
+        <button v-on:click="handleClick">v-on:click</button>
+        <button @click="handleClick">@clik</button>
+    </div>
+</body>
+<script src="js/observe.js"></script>
+<script src="js/index.js"></script>
+<!-- <script type="text/javascript" src="https://static-as.missfresh.cn/frontend/vue/2.5.16/vue.min.js"></script> -->
+
+<script type="text/javascript"> 
+    let vm  =new Vue({
+        el:'#app',
+        data:{
+            person:{
+                name:'jack',
+                age:18,
+                fav:'嘻嘻嘻嘻嘻嘻嘻嘻寻寻寻寻寻寻寻'
+            },
+            msg:'我是一个msg',
+            htmlStr:' 我是一个html'
+        },
+        methods:{
+            handleClick:()=>{
+                console.log(vm.data.person.age)
+            }
+        }
+    })
+
+</script>
+</html>
