@@ -1,0 +1,22 @@
+{
+  "name": "mini-vue",
+  "version": "1.0.0",
+  "description": "![流程图](https://github.com/tomyfrieng/mini-vue/blob/master/images/vue.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomyfrieng/mini-vue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomyfrieng/mini-vue/issues"
+  },
+  "homepage": "https://github.com/tomyfrieng/mini-vue#readme",
+  "dependencies": {
+    "vue": "^2.6.12"
+  }
+}
